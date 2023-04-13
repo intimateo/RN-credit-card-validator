@@ -5,7 +5,6 @@ typings
 # OSX
 #
 .DS_Store
-vendor/
 
 # Xcode
 #
