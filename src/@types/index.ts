@@ -1,4 +1,4 @@
-import { Control } from 'react-hook-form';
+import { Control, UseControllerProps, FieldError } from 'react-hook-form';
 
 export interface CreditCardFormData {
     creditCardNumber: string;
@@ -7,7 +7,7 @@ export interface CreditCardFormData {
     firstName: string;
     lastName: string;
   }
-export interface InputProps {
+export type InputProps = {
     control: Control;
     name: string;
     rules?: Record<string, unknown>;
@@ -15,4 +15,5 @@ export interface InputProps {
     label?: string;
     keyboardType?: 'default' | 'number-pad' | 'decimal-pad' | 'numeric' | 'email-address' | 'phone-pad';
     variant?: 'standard' | 'outlined' | 'filled';
+    error?: FieldError;
   }

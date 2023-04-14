@@ -1,10 +1,12 @@
 import React from 'react';
-import { Control, Controller, FieldValues } from 'react-hook-form';
-import { TextInput } from '@react-native-material/core';
+import { Control, Controller, FieldValues,  } from 'react-hook-form';
+import { TextInput, Text } from '@react-native-material/core';
 import { InputProps } from '@types';
 
-const Input: React.FC<InputProps> = ({ control, name, rules, defaultValue = '', label = '', keyboardType = 'default', variant = 'filled' }) => {
+
+const Input: React.FC<InputProps> = ({ control, name, rules, defaultValue = '', label = '', keyboardType = 'default', variant = 'outlined', ...rest }) => {
     return (
+    <>
       <Controller
         control={control as Control<FieldValues>}
         name={name}
@@ -18,9 +20,11 @@ const Input: React.FC<InputProps> = ({ control, name, rules, defaultValue = '', 
             onChangeText={onChange}
             value={value}
             keyboardType={keyboardType}
+            {...rest}
           />
         )}
       />
+    </>
     );
   };
   
