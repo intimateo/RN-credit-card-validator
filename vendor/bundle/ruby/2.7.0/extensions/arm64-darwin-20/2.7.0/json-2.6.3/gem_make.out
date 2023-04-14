@@ -1,0 +1,13 @@
+current directory: /Users/imateo/Developer/RN-credit-card-validator/MyApp/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+/Users/imateo/.rvm/rubies/ruby-2.7.2/bin/ruby -I /Users/imateo/.rvm/rubies/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20230412-37621-jo7efk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/imateo/Developer/RN-credit-card-validator/MyApp/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/imateo/Developer/RN-credit-card-validator/MyApp/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/imateo/Developer/RN-credit-card-validator/MyApp/vendor/bundle/ruby/2.7.0/gems/json-2.6.3/ext/json
+make "DESTDIR=" install
